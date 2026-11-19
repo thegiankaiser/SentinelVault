@@ -1,0 +1,16 @@
+server:
+  port: ${PORT:8080}
+spring:
+  application:
+    name: sentinelvault-telemetry-service
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/sentinelvault}
+      auto-index-creation: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+sentinelvault:
+  internal-token: ${INTERNAL_SERVICE_TOKEN:local-internal-token}

@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: sentinelvault-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - sentinelvault-mongo-data:/data/db
+      - ./infra/mongo/init:/docker-entrypoint-initdb.d:ro
+    environment:
+      MONGO_INITDB_DATABASE: sentinelvault
+volumes:
+  sentinelvault-mongo-data:
