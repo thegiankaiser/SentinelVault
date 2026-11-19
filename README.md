@@ -1,4 +1,20 @@
 # SentinelVault — Distributed Identity & Telemetry Platform
+## Project Purpose
+
+**SentinelVault** is a distributed identity and telemetry monitoring platform designed to demonstrate how modern applications can collect, process, secure, and visualize system activity across multiple services.
+
+The project simulates a centralized security monitoring environment where telemetry events are ingested through a backend service, stored in MongoDB, exposed through a secured API gateway, and presented through an Angular dashboard.
+
+The goal is to explore practical software engineering concepts involved in building distributed applications, including:
+
+- **Telemetry ingestion:** Receiving and validating incoming system events.
+- **Data persistence:** Storing telemetry records using MongoDB.
+- **API security:** Applying JWT authentication and role-based access control.
+- **Frontend visualization:** Displaying system activity through an Angular dashboard.
+- **Service architecture:** Separating responsibilities across independently structured services.
+- **Testing and reliability:** Establishing automated testing foundations and repeatable local development workflows.
+
+SentinelVault is an educational engineering project and a foundation for exploring distributed systems, identity monitoring, and security-focused application development. It is not intended to replace a production security information and event management (SIEM) platform.
 
 A portfolio-ready local MVP demonstrating a distributed telemetry pipeline:
 - **Spring Boot / Java 21** ingestion and query microservice
